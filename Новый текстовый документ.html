@@ -1,38 +1,68 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!doctype html>
+<html lang="en">
 
-        <!-- Подключаем Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <meta charset="UTF-8">
-        <link rel="stylesheet"  href="stile.css">
-	
-	</head>
-	
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stile.css" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Пример верстки реального макета на CSS Flexbox</title>
+    
+</head>
+
 <body>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
-    <!-- Подключаем плагин Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    
-    <!-- Подключаем Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" ></script>
-		
-	<div class = "content">
-        <div class = "header">
-            <div class = "logo">
-                <span class = "logo_text bright">Bright</span>
-                <img src = "images\logo.png" class ="logo_picture"></img>
-                <span class = "logo_text mind">Mind</span>
-            </div>
-            
-			<h1 class = "heading intmap">Интерактивная карта участка городской среды</h1>
+
+    <header class="container header">
+        <div class = "logo">
+            <img src="images\logo.png" class="logo_picture"></img>
         </div>
-        
-        
-            
-    </div> 
+        <div style= "title_head" >
+            [Шапка страницы]
+        </div>
+    </header>
+    <main class="container main">
+        <div class="row">
+            <article class="col col__article">
+                <div
+                    style="font-size: 20px; text-align:center; padding-top: 30px; padding-bottom: 0px; font-weight: bold;">
+                    [Основная часть]
+                </div>
+                <h1>Заголовок 1 уровня</h1>
+                <p>Lorem ipsum dolor sit amet. Qui ad minima veniam quis. Sapiente delectus, ut enim ipsam. Iusto odio
+                    dignissimos ducimus, qui in ea commodi autem. Adipisci velit, sed ut et voluptates repudiandae. Iste
+                    natus error sit voluptatem. Soluta nobis est eligendi optio, cumque nihil molestiae. Sequi nesciunt,
+                    neque porro quisquam est, omnis voluptas nulla. In ea voluptate velit esse quam. Eveniet, ut
+                    perspiciatis, unde omnis iste natus error sit voluptatem.</p>
+                <h2>Заголовок 2 уровня</h2>
+                <p>Lorem ipsum dolor sit amet. Qui ad minima veniam quis. Sapiente delectus, ut enim ipsam. Iusto odio
+                    dignissimos ducimus, qui in ea commodi autem. Adipisci velit, sed ut et voluptates repudiandae. Iste
+                    natus error sit voluptatem. Soluta nobis est eligendi optio, cumque nihil molestiae. Sequi nesciunt,
+                    neque porro quisquam est, omnis voluptas nulla. In ea voluptate velit esse quam. Eveniet, ut
+                    perspiciatis, unde omnis iste natus error sit voluptatem.</p>
+                <p>Lorem ipsum dolor sit amet. Qui ad minima veniam quis. Sapiente delectus, ut enim ipsam. Iusto odio
+                    dignissimos ducimus, qui in ea commodi autem. Adipisci velit, sed ut et voluptates repudiandae. Iste
+                    natus error sit voluptatem. Soluta nobis est eligendi optio, cumque nihil molestiae. Sequi nesciunt,
+                    neque porro quisquam est, omnis voluptas nulla. In ea voluptate velit esse quam. Eveniet, ut
+                    perspiciatis, unde omnis iste natus error sit voluptatem.</p>
+                <h2>Заголовок 2 уровня</h2>
+                <p>Lorem ipsum dolor sit amet. Qui ad minima veniam quis. Sapiente delectus, ut enim ipsam. Iusto odio
+                    dignissimos ducimus, qui in ea commodi autem. Adipisci velit, sed ut et voluptates repudiandae. Iste
+                    natus error sit voluptatem. Soluta nobis est eligendi optio, cumque nihil molestiae. Sequi nesciunt,
+                    neque porro quisquam est, omnis voluptas nulla. In ea voluptate velit esse quam. Eveniet, ut
+                    perspiciatis, unde omnis iste natus error sit voluptatem.</p>
+            </article>
+            <aside class="col col__aside"
+                style="font-size: 20px; text-align:center; padding-top: 20px; padding-bottom: 20px; font-weight: bold; min-height: 200px;">
+                [Боковая область]
+            </aside>
+        </div>
+    </main>
+    <footer class="container footer"
+        style=" font-size: 20px; text-align:center; padding-top: 20px; padding-bottom: 20px; font-weight: bold;">
+        [Футер]
+    </footer>
+
 </body>
-	
-</html>
+
+</html>							
+
+							
