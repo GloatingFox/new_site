@@ -1,0 +1,43 @@
+.content{
+    background:linear-gradient(180deg, #7364B1 4.69%, rgba(221, 213, 255, 0) 100%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #2DDDBD 67.71%, rgba(163, 240, 0, 0) 93.23%);
+    min-height: 500px;
+}
+
+.header{
+    width: 50%;
+    height: 100px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+
+}
+.logo_text{
+    font-family:  Comic Sans MS;
+    font-style: normal; 
+    font-weight: normal; 
+    font-size: 15px; 
+    line-height: 18px;
+    color: #FAFDFF;
+}
+.bright{
+    position: absolute; 
+    width: 61px; 
+    height: 18px; 
+    left: 3px; 
+    top: 6px;
+}
+.mind{
+    position: absolute; 
+    width: 43px; 
+    height: 18px; 
+    left: 80px; 
+    top: 90px;
+}
+.logo_picture{
+    position: left;
+    padding-left: 0%;
+    height: 100%; 
+    width: 30%; 
+    z-index: 1;
+}
