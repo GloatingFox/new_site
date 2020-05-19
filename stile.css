@@ -192,21 +192,26 @@ body {
     padding-left: 10%;
     bottom: 6%;
     justify-content: center;
-    background-color: #2DDDBD;
 }
+.base{
+    position: relative;
+    top: 39%;
+    left: 25%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    width: 250px;
+}/* Cтили фоновых элементов */
+
 .rectanguar_dark {
     position: absolute;
     width: 162px;
     height: 93px;
     margin: 0;
-    
-    position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%);
-    
-    
+    transform: translate(-50%, -50%);   
     max-width: 500px;
     background: rgba(149, 148, 148, 0.5);
     border-radius: 51.5px;
@@ -222,13 +227,65 @@ body {
     transform: translate(-50%, -50%);
     background: rgba(196, 196, 196, 0.75);
     border-radius: 51.5px;
+    z-index: 7 ;
     
 }
+/* Стили кнопок */
+.arrowRight {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    z-index: 10;
+    margin: 37% 76%;
+}
+
+.arrowUp {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    z-index: 10;
+    margin: -4% 37.5%;
+    transform: rotate(-90deg);
+    
+}
+
+.arrowLeft {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    z-index: 10;
+    margin: 34% -4%;
+    transform: rotate(-180deg);
+}
+
+.arrowDown {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    z-index: 10;
+    margin: 76% 34%;
+    transform: rotate(90deg);
+}
+
+.stop {
+    position: absolute;
+
+    
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
 .signs{
+    max-width: 200px;
     width: 194px;
+    min-width: 180px;
     height: 176px;
-    left: 440px;
-    top: 473px;
+    margin-top: 5%;
+    margin-left: -10%;
     background: rgba(196, 196, 196, 0.5);
     border: 5px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
