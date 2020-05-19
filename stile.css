@@ -281,7 +281,41 @@ body {
     transform: translate(-50%, -50%);
     z-index: 10;
 }
+.arrowUp:active{
+	top: 444px;
+}
+.arrowDown:active{
+	top: 630px;
+}
+.arrowLeft:active{
+	top: 534px;
+}
+.arrowRight:active {
+	top: 543px;
+}
+.stop:active{
+	top: 544px;
+}
 
+@font-face{
+	font-family:Gotham;
+	src:url('GothaProReg.otf');
+}
+
+@font-face{
+	font-family:K2D;
+	src:url('K2D-Regular.ttf');
+}
+
+@font-face{
+	font-family:Roboto;
+	src:url('Roboto-Regular.ttf');
+}
+
+@font-face{
+	font-family:RobotoMono;
+	src:url('RobotoMono-Regular.ttf');
+}
 .signs{
     max-width: 200px;
     width: 194px;
