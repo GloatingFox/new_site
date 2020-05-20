@@ -465,17 +465,13 @@ body {
 .col__aside {
 }
 
-.maket {
-    background-repeat: no-repeat;
+.maket_body {
     position: center;
-    height: 100%;
     top: 30px;
-    border: 6px dashed #744599;
     z-index: 1;
-    background-image: url("images/maket.png");
 }
-.maket background-image{
-    border-radius: 6px;
+.maket{
+    border: 6px dashed #744599;
 }
 #robots_body {
     position: absolute;
