@@ -159,16 +159,16 @@ body {
 
     /* 2/3 от ширины контейнера */
     .signs {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
+        -ms-flex: 0 0 55%;
+        flex: 0 0 55%;
+        max-width: 55%;
     }
 
     /* 1/3 от ширины контейнера */
     .joystick {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
+        -ms-flex: 0 0 45%;
+        flex: 0 0 45%;
+        max-width: 45%;
         
     }
 .manage{
@@ -337,9 +337,24 @@ body {
 
 .maket {
     position: center;
+    height: 100%;
     top: 30px;
     border: 6px dashed #744599;
     z-index: 1;
+    background-image: url("images/maket.png");
+}
+.maket background-image{
+    border-radius: 6px;
+}
+#robots_body {
+    position: absolute;
+    width: 70px;
+    height: 61px;
+    
+    border: 1px solid #00FF19;
+    box-sizing: border-box;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    z-index: 5;
 }
 
 .speed{
@@ -588,4 +603,16 @@ body {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+footer {
+    /* Чтобы footer не уменьшался */
+    flex-shrink: 0;
+    background-color: rgba(196, 196, 196, 0.5);
+}
+
+.office_logo {
+    
+    width: 120px;
+    height: 31px;
 }
