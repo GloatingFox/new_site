@@ -365,6 +365,7 @@ body {
     max-width: 500px;
     background: rgba(149, 148, 148, 0.5);
     border-radius: 51.5px;
+    z-index: -5;
 }
 .rectanguar_light {
     position: absolute;
@@ -377,52 +378,55 @@ body {
     transform: translate(-50%, -50%);
     background: rgba(196, 196, 196, 0.75);
     border-radius: 51.5px;
-    z-index: 7 ;
+    z-index: -3;
     
 }
 /* Стили кнопок */
 .arrowRight {
-    position: absolute;
+    
     width: 70px;
     height: 70px;
     z-index: 10;
-    margin: 37% 76%;
+    margin-top: 38%;
+    margin-left: 77%;
+    z-index: 10;
 }
 
 .arrowUp {
-    position: absolute;
+    
     width: 70px;
     height: 70px;
     z-index: 10;
-    margin: -4% 37.5%;
+    margin-top: -67%;
+    margin-left: 38%;
     transform: rotate(-90deg);
     
 }
 
 .arrowLeft {
-    position: absolute;
+    
     width: 70px;
     height: 70px;
     z-index: 10;
-    margin: 34% -4%;
+    margin-top: 7%;
+    margin-left:  -4%;
     transform: rotate(-180deg);
 }
 
 .arrowDown {
-    position: absolute;
+    
     width: 70px;
     height: 70px;
     z-index: 10;
-    margin: 76% 34%;
+    margin-top: 12%;
+    margin-left:  34%;
     transform: rotate(90deg);
 }
 
 .stop {
-    position: absolute;
-    margin: 0;
-    top: 46%;
-    left: 50%;
-    margin-right: -50%;
+ 
+    margin-top: -47%;
+    margin-left:  54.75%;
     transform: translate(-50%, -50%);
     z-index: 10;
 }
@@ -527,10 +531,10 @@ body {
     width: 600px;
 }
 #robots_body {
-    position: absolute;
+    position: relative;
     width: 70px;
     height: 61px;
-    
+    margin-top: -100px;
     border: 1px solid #00FF19;
     box-sizing: border-box;
     transform: matrix(1, 0, 0, -1, 0, 0);
