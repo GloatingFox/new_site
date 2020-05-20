@@ -607,12 +607,18 @@ body {
 
 footer {
     /* Чтобы footer не уменьшался */
+    position: relative;
     flex-shrink: 0;
     background-color: rgba(196, 196, 196, 0.5);
 }
-
+footer img{
+    position:absolute;
+    bottom:50px;
+     right:50px;
+}
 .office_logo {
-    
+    bottom:50px;
+     right:50px;
     width: 120px;
     height: 31px;
 }
