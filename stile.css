@@ -431,19 +431,19 @@ body {
     z-index: 10;
 }
 .arrowUp:active{
-	top: 444px;
+	opacity: 0.5;
 }
 .arrowDown:active{
-	top: 630px;
+	opacity: 0.5;
 }
 .arrowLeft:active{
-	top: 534px;
+	opacity: 0.5;
 }
 .arrowRight:active {
-	top: 543px;
+	opacity: 0.5;
 }
 .stop:active{
-	top: 544px;
+	opacity: 0.5;
 }
 
 @font-face{
@@ -529,6 +529,7 @@ body {
     border: 6px dashed #744599;
     height: 600px;
     width: 600px;
+	position:relative;
 }
 #robots_body {
     position: relative;
@@ -893,3 +894,61 @@ body {
     position: absolute;
 
 }
+
+/*---------------------------------------------------------------*/
+
+ul {
+	list-style-type: none;
+}
+
+button {
+	width:80px;
+	text-align:center;
+	border-radius: 10px;
+	cursor:pointer;
+	
+}
+.barrier{
+	position:relative;
+	bottom:13%;
+	left:20%;
+	height:80px;
+	width:20px;
+	cursor:pointer;
+
+}
+li {display:none;}
+.barrier:hover li{display:block;}
+.barrier:focus li{display:block;}
+.traffic_light:hover li{display:block;}
+.traffic_light:focus li{display:block;}
+.barrier:hover{
+	background-color:red;
+	opacity:0.7;
+	
+}
+.traffic_light{
+	position:relative;
+	bottom:20%;
+	left:52%;
+	width:25px;
+	height:25px;
+	cursor:pointer;
+}
+.traffic_light:hover{
+	background-color:red;
+	opacity:0.7;
+	
+}
+
+.traffic_light_zone{
+	position:relative;
+	bottom:270%;
+}
+
+.red:hover, .barrier_down:hover{background-color:#ff0000;color:#ffffff;}
+.red:focus, .barrier_down:focus{background-color:#ff0000;color:#ffffff;}
+.green:hover, .barrier_up:hover{background-color:#008000;color:#ffffff;}
+.green:focus, .barrier_up:focus{background-color:#008000;color:#ffffff;}
+.yellow:hover{background-color:#FFFF00;color:#000000;}
+.yellow:focus{background-color:#FFFF00;color:#000000;}
