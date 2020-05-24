@@ -38,7 +38,7 @@ function moveRectForward() {
   blueRect.style.marginLeft =
     left + 40 * (speed.value / 100) * Math.cos((degree * Math.PI) / 180) + "px";
   coorY.innerHTML = -parseInt(
-    top - ((40 * speed.value) / 100) * Math.sin((degree * Math.PI) / 180)
+    top - ((40 * speed.value) / 100) * Math.sin((degree * Math.PI) / 180) + 100
   );
   coorX.innerHTML = parseInt(
     left + 40 * (speed.value / 100) * Math.cos((degree * Math.PI) / 180)
@@ -54,7 +54,7 @@ function moveRectBackward() {
   blueRect.style.marginLeft =
     left - 40 * (speed.value / 100) * Math.cos((degree * Math.PI) / 180) + "px";
   coorY.innerHTML = -parseInt(
-    top + 40 * (speed.value / 100) * Math.sin((degree * Math.PI) / 180)
+    top + 40 * (speed.value / 100) * Math.sin((degree * Math.PI) / 180) + 100
   );
   coorX.innerHTML = parseInt(
     left - 40 * (speed.value / 100) * Math.cos((degree * Math.PI) / 180)
@@ -75,7 +75,7 @@ function moveRect(e) {
       blueRect.style.transform = "rotate(" + degree + "deg)";
       break;
     case 38: // если нажата клавиша вверх
-      if (top > -510 && left < 510) {
+      if ( coorY.innerHTML <! 300 +"px"  || coorX.innerHTML <! 300 +"px" ) {
         blueRect.style.marginTop =
           top +
           10 * (speed.value / 100) * Math.sin((degree * Math.PI) / 180) +
@@ -90,14 +90,14 @@ function moveRect(e) {
         coorX.innerHTML = parseInt(
           left + 10 * (speed.value / 100) * Math.cos((degree * Math.PI) / 180)
         );
-      }
+        }
       break;
     case 39: // если нажата клавиша вправо
       degree = degree + 20 * (speed.value / 100);
       blueRect.style.transform = "rotate(" + degree + "deg)";
       break;
     case 40: // если нажата клавиша вниз
-      if (top < -10 && left > -10) {
+      if (top < -300 && left > 300) {
         blueRect.style.marginTop =
           top -
           10 * (speed.value / 100) * Math.sin((degree * Math.PI) / 180) +
