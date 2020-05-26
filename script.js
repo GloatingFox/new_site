@@ -38,7 +38,7 @@ function moveRectForward() {
   blueRect.style.marginLeft =
     left + 40 * (speed.value / 100) * Math.cos((degree * Math.PI) / 180) + "px";
   coorY.innerHTML = -parseInt(
-    top - ((40 * speed.value) / 100) * Math.sin((degree * Math.PI) / 180) + 100
+    top - ((40 * speed.value) / 100) * Math.sin((degree * Math.PI) / 180) + 246
   );
   coorX.innerHTML = parseInt(
     left + 40 * (speed.value / 100) * Math.cos((degree * Math.PI) / 180)
@@ -54,7 +54,7 @@ function moveRectBackward() {
   blueRect.style.marginLeft =
     left - 40 * (speed.value / 100) * Math.cos((degree * Math.PI) / 180) + "px";
   coorY.innerHTML = -parseInt(
-    top + 40 * (speed.value / 100) * Math.sin((degree * Math.PI) / 180) + 100
+    top + 40 * (speed.value / 100) * Math.sin((degree * Math.PI) / 180) + 246
   );
   coorX.innerHTML = parseInt(
     left - 40 * (speed.value / 100) * Math.cos((degree * Math.PI) / 180)
